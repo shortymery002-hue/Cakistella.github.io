@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>كاكيستيلا – المستلزمات والمكونات للحلويات</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Quicksand', sans-serif; background-color: #fff7fb; color: #4a2e3b; line-height: 1.5; }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 600; letter-spacing: 0.02em; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+    .language-selector { background-color: #fbc3d0; padding: 0.4rem 2rem; display: flex; justify-content: flex-start; gap: 1.8rem; font-weight: 600; border-bottom: 2px solid #f7a5b9; flex-wrap: wrap; }
+    .language-selector a { text-decoration: none; color: #592d3b; font-size: 0.95rem; transition: 0.2s; display: inline-flex; align-items: center; gap: 0.3rem; }
+    .language-selector a:hover { color: #a11f4a; transform: scale(1.05); }
+    .language-selector a i { font-size: 1rem; color: #c25b7a; }
+    .top-banner { background-color: #fbc3d0; text-align: center; padding: 0.6rem 0; font-size: 0.95rem; font-weight: 500; color: #592d3b; border-bottom: 3px solid #f7a5b9; font-family: 'Playfair Display', serif; }
+    .top-banner i { margin: 0 0.4rem; color: #a74862; }
+    .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: #ffeef3; backdrop-filter: blur(4px); box-shadow: 0 4px 20px rgba(180, 70, 100, 0.08); flex-wrap: wrap; border-bottom: 2px solid #fec5d5; }
+    .logo { display: flex; align-items: center; gap: 0.8rem; }
+    .logo-cupcake { position: relative; display: inline-flex; align-items: center; justify-content: center; }
+    .logo-cupcake i.fa-cake-candles { font-size: 3.2rem; color: #f091b2; filter: drop-shadow(0 0 4px #f7d875); }
+    .logo-cupcake .sparkle1, .logo-cupcake .sparkle2, .logo-cupcake .sparkle3 { position: absolute; font-size: 1.2rem; color: #f5b81b; text-shadow: 0 0 8px #ffdf7e, 0 0 12px #ffb347; }
+    .logo-cupcake .sparkle1 { top: -8px; left: -8px; transform: rotate(15deg); }
+    .logo-cupcake .sparkle2 { top: 2px; right: -12px; transform: rotate(-10deg); font-size: 1rem; }
+    .logo-cupcake .sparkle3 { bottom: -4px; left: -2px; font-size: 1.4rem; }
+    .logo-text { font-size: 2.2rem; font-family: 'Playfair Display', serif; font-weight: 700; color: #8f4a5b; letter-spacing: -0.5px; }
+    .logo-text span { font-size: 1rem; font-family: 'Quicksand', sans-serif; font-weight: 400; color: #b35f78; display: block; line-height: 1.3; letter-spacing: 2px; }
+    .nav-links { display: flex; gap: 2.5rem; font-weight: 600; flex-wrap: wrap; }
+    .nav-links a { text-decoration: none; color: #672f41; transition: 0.2s; border-bottom: 2px solid transparent; padding-bottom: 4px; font-size: 1.1rem; }
+    .nav-links a:hover { border-bottom-color: #e590ab; color: #b14b6a; }
+    .header-icons { display: flex; gap: 1.6rem; font-size: 1.3rem; color: #ac4f6a; }
+    .header-icons i { cursor: default; transition: transform 0.2s; }
+    .header-icons i:hover { transform: scale(1.1); color: #d47490; }
+    .hero { background: linear-gradient(110deg, #ffdae3 10%, #fde1ec 60%, #ffe6ef 90%); min-height: 460px; display: flex; align-items: center; margin-bottom: 2rem; border-radius: 0 0 5rem 5rem; border-bottom: 6px solid #fbb1c2; box-shadow: inset 0 -10px 18px #fbc1cf4d; position: relative; }
+    .hero::before { content: "❁   ✿   ❁   ✿   ❁"; position: absolute; bottom: 20px; left: 30px; font-size: 2.2rem; color: #f38ea8; opacity: 0.25; rotate: 3deg; }
+    .hero-overlay { background-color: rgba(255, 220, 235, 0.5); backdrop-filter: blur(3px); padding: 2.8rem 4rem; border-radius: 3rem 3rem 3rem 3rem; max-width: 750px; margin-right: 6%; border: 2px dashed #f3a5bb; }
+    .hero h2 { font-size: 3.2rem; line-height: 1.2; font-weight: 700; color: #60293d; text-shadow: 2px 2px 0 #fdcfdd; }
+    .hero h2 i { color: #b34262; font-size: 2.8rem; }
+    .hero p { font-size: 1.3rem; margin-top: 1rem; font-weight: 500; color: #4a2633; }
+    .btn { display: inline-block; background-color: #eea5b9; color: #2d1720; padding: 1rem 2.5rem; margin-top: 2rem; border-radius: 60px; text-decoration: none; font-weight: 700; box-shadow: 0 6px 14px #dd8caa; transition: 0.25s; border: 2px solid #ffe2ec; font-size: 1.1rem; }
+    .btn i { margin-left: 0.7rem; margin-right: 0; }
+    .btn:hover { background-color: #f6b5c9; transform: translateY(-4px); box-shadow: 0 12px 20px #d27d9b; }
+    .welcome { text-align: center; margin: 4rem 0 2rem; background: #fce3ec; padding: 2.5rem 2rem; border-radius: 4rem 1rem 4rem 1rem; border: 2px solid #fdc2d2; }
+    .welcome h3 { font-size: 2.4rem; color: #7d3b50; margin-bottom: 1rem; }
+    .welcome p { max-width: 800px; margin: 0 auto; font-size: 1.25rem; color: #542d3a; }
+    .welcome i.fa-star { color: #da7b9a; margin: 0 0.3rem; }
+    .section-title { font-size: 2.5rem; text-align: center; margin: 3rem 0 1.5rem; color: #803d54; position: relative; }
+    .section-title:after { content: "☪︎ ✦ ˖ ✦ ☪︎"; display: block; font-size: 1.8rem; color: #e38dab; letter-spacing: 8px; margin-top: 6px; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin: 3rem 0; }
+    .product-card { background-color: #fff6fa; border-radius: 2.5rem 1rem 2.5rem 1rem; overflow: hidden; box-shadow: 0 18px 30px -12px #c9829d; transition: 0.25s ease; border: 1px solid #fecfde; }
+    .product-card:hover { transform: translateY(-8px); box-shadow: 0 26px 35px -12px #bd6d8a; border-color: #ec9eb7; }
+    .product-img { height: 210px; background-size: cover; background-position: center; background-color: #fde1ea; display: flex; align-items: flex-end; justify-content: flex-start; padding: 0.8rem; }
+    .badge { background-color: #fbd1de; color: #741f41; font-weight: 700; padding: 0.4rem 1.2rem; border-radius: 40px; font-size: 0.8rem; border: 2px solid #feaac4; box-shadow: 0 3px 8px #eba1b9; }
+    .product-info { padding: 1.5rem 1.2rem 1.5rem; }
+    .product-info h4 { font-size: 1.5rem; font-weight: 600; margin-bottom: 0.3rem; color: #6d3147; }
+    .product-desc { font-size: 0.95rem; color: #794a5a; margin: 0.5rem 0 1rem; }
+    .product-footer { display: flex; justify-content: space-between; align-items: center; font-weight: 700; border-top: 2px dotted #f5b7cb; padding-top: 0.8rem; }
+    .price { font-size: 1.4rem; color: #ac496b; }
+    .price small { font-size: 0.8rem; font-weight: 400; color: #b2637d; }
+    .btn-add { background: none; border: 2px solid #f19dbb; color: #7b2a47; padding: 0.4rem 1.3rem; border-radius: 40px; font-weight: 600; transition: 0.2s; cursor: default; font-size: 0.9rem; }
+    .btn-add i { margin-left: 0.4rem; margin-right: 0; }
+    .btn-add:hover { background-color: #fedae8; border-color: #dd7b9f; }
+    .essentials-banner { background-color: #fdcfde; background-image: repeating-linear-gradient(45deg, #fec7d8 0px, #fec7d8 6px, #ffe9f0 6px, #ffe9f0 12px); border-radius: 5rem 1rem 5rem 1rem; padding: 2.8rem 3rem; margin: 3.5rem 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; border: 3px solid #eeaec4; }
+    .essentials-banner h3 { font-size: 2.2rem; color: #571f34; font-weight: 700; }
+    .essentials-banner p { max-width: 450px; font-size: 1.15rem; color: #3d1f2a; }
+    .tag-list { display: flex; gap: 1.8rem; font-size: 1.8rem; color: #a94264; flex-wrap: wrap; }
+    .tag-list i { background: #ffeef4; padding: 0.9rem; border-radius: 50%; box-shadow: 0 4px 12px #d47e9d; border: 1px solid #f7b7cb; }
+    .ingredients-showcase { display: flex; gap: 2rem; margin: 2rem 0 3rem; flex-wrap: wrap; }
+    .ingredient-item { background: #feeaf1; flex: 1 1 200px; text-align: center; padding: 2.2rem 1rem; border-radius: 3rem 1rem 3rem 1rem; border: 2px solid #fbc1d3; transition: all 0.2s; box-shadow: 0 10px 14px #efbfcf; }
+    .ingredient-item i { font-size: 3.2rem; color: #ce6f8f; margin-bottom: 0.8rem; }
+    .ingredient-item h4 { font-size: 1.5rem; color: #732e49; }
+    .ingredient-item:hover { background: #ffdae7; border-color: #de88a8; }
+    .newsletter { background-color: #fbb9cf; border-radius: 4rem 0.2rem 4rem 0.2rem; padding: 3rem 2rem; text-align: center; color: #321d26; margin-top: 5rem; border: 4px solid #fda7c1; }
+    .newsletter h3 { font-size: 2.2rem; color: #421e2d; }
+    .newsletter .input-group { display: flex; max-width: 650px; margin: 2rem auto 0.5rem; background: #ffeef5; border-radius: 60px; overflow: hidden; border: 2px solid #ec93b1; }
+    .input-group input { flex: 1; border: none; padding: 1rem 1.8rem; font-size: 1.1rem; outline: none; font-family: 'Quicksand', sans-serif; background: #fffafd; }
+    .input-group button { background-color: #bc5f80; color: white; border: none; padding: 0 2.5rem; font-weight: 700; font-size: 1.1rem; cursor: default; transition: 0.2s; border-right: 2px solid #ffb7cf; }
+    .input-group button:hover { background-color: #d37b9c; }
+    footer { background: #572f3e; color: #fadbe8; padding: 2.5rem 2rem 1.5rem; font-size: 1rem; border-top: 8px solid #f3abbd; }
+    .footer-content { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem; max-width: 1280px; margin: 0 auto; }
+    .footer-col p i { color: #fdb4cc; margin-left: 0.6rem; margin-right: 0; }
+    .footer-col .logo-text { color: #fccfdf; font-size: 2rem; }
+    .footer-col .logo-text span { color: #f39bb9; }
+    .footer-copyright { text-align: center; margin-top: 3rem; color: #eeaec6; border-top: 2px solid #8c4e63; padding-top: 1.8rem; font-size: 0.95rem; }
+    .footer-copyright i { color: #ffb7cf; }
+    @media (max-width: 800px) { .navbar { flex-direction: column; gap: 1rem; } .hero h2 { font-size: 2.5rem; } .hero-overlay { margin-right: 2%; padding: 2rem; } .language-selector { justify-content: center; } .nav-links { justify-content: center; } }
+  </style>
+</head>
+<body>
+  <div class="language-selector">
+    <a href="index.html"><i class="fas fa-flag"></i> Français</a>
+    <a href="en.html"><i class="fas fa-flag-usa"></i> English</a>
+    <a href="ar.html"><i class="fas fa-flag"></i> العربية</a>
+    <a href="darija.html"><i class="fas fa-flag"></i> الدارجة</a>
+  </div>
+
+  <div class="top-banner">
+    <i class="fas fa-moon"></i> التوصيل إلى جميع أنحاء المغرب <i class="fas fa-cookie-bite"></i> •  <i class="fas fa-heart" style="color:#a74862;"></i> حلاوة مضمونة
+  </div>
+
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <div class="logo-cupcake">
+          <i class="fas fa-cake-candles"></i>
+          <i class="fas fa-star sparkle1"></i>
+          <i class="fas fa-star sparkle2"></i>
+          <i class="fas fa-star sparkle3"></i>
+        </div>
+        <div class="logo-text">كاكيستيلا<span>المستلزمات والحلويات</span></div>
+      </div>
+      <div class="nav-links">
+        <a href="#">المتجر</a>
+        <a href="#">المستلزمات</a>
+        <a href="#">المكونات</a>
+        <a href="#">وصفات</a>
+        <a href="#">اتصل بنا</a>
+      </div>
+      <div class="header-icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-user"></i>
+        <i class="fas fa-shopping-bag"></i>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay">
+      <h2><i class="fas fa-heart"></i> روح الكعكة<br>على الطريقة المغربية</h2>
+      <p>مستلزمات راقية، مكونات أصيلة لعشاق الحلويات في ألف ليلة وليلة.</p>
+      <a href="#" class="btn"><i class="fas fa-chevron-right"></i> اكتشف المتجر</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="welcome">
+      <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+      <h3>مرحبا بكم في كاكيستيلا</h3>
+      <p>نضفي لمسة وردية دافئة على حلوياتكم. مكونات من التراث المغربي (ماء زهر، عسل، لوز) وقوالب رقيقة.</p>
+    </div>
+
+    <h3 class="section-title">المستلزمات المفضلة</h3>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1607962686972-cf519067e6b7?q=80&w=1374&auto=format&fit=crop');">
+          <span class="badge"><i class="fas fa-heart"></i> مفضل</span>
+        </div>
+        <div class="product-info">
+          <h4>قالب كيك كاكيستيلا</h4>
+          <p class="product-desc">ألمنيوم غير لاصق، صنع في فاس. قطر 22 سم.</p>
+          <div class="product-footer">
+            <span class="price">185 <small>درهم</small></span>
+            <span class="btn-add"><i class="fas fa-plus"></i> أضف</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1598511796444-e8c24c67448a?q=80&w=1374&auto=format&fit=crop');">
+          <span class="badge">⭐ الأكثر مبيعاً</span>
+        </div>
+        <div class="product-info">
+          <h4>محضر طعام وردي</h4>
+          <p class="product-desc">وعاء ستانلس ستيل 5 لتر، مضرب، مضرب عجين. إصدار محدود المغرب.</p>
+          <div class="product-footer">
+            <span class="price">2390 <small>درهم</small></span>
+            <span class="btn-add"><i class="fas fa-plus"></i> أضف</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1612887851342-4ab5e43dc17f?q=80&w=1374&auto=format&fit=crop');">
+          <span class="badge">🌿 طبيعي</span>
+        </div>
+        <div class="product-info">
+          <h4>طقم مضارب وملاعق</h4>
+          <p class="product-desc">طقم 3 مضارب سيليكون + 2 ملعقة (ذهبي وردي).</p>
+          <div class="product-footer">
+            <span class="price">220 <small>درهم</small></span>
+            <span class="btn-add"><i class="fas fa-plus"></i> أضف</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1586788680434-b30f685b4a6c?q=80&w=1374&auto=format&fit=crop');">
+          <span class="badge">🎀 طقم هدية</span>
+        </div>
+        <div class="product-info">
+          <h4>أقماع وأكياس المغرب</h4>
+          <p class="product-desc">8 أقماع ستانلس ستيل + 2 كيس سيليكون. نقش الزليج.</p>
+          <div class="product-footer">
+            <span class="price">395 <small>درهم</small></span>
+            <span class="btn-add"><i class="fas fa-plus"></i> أضف</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="essentials-banner">
+      <div>
+        <h3>كهف المستلزمات</h3>
+        <p>خلاطات، موازين دقيقة، رفوف، حلقات... كل شيء بألوان وردية ناعمة.</p>
+      </div>
+      <div class="tag-list">
+        <i class="fas fa-weight-scale"></i>
+        <i class="fas fa-mortar-pestle"></i>
+        <i class="fas fa-whisk"></i>
+        <i class="fas fa-temperature-high"></i>
+      </div>
+    </div>
+
+    <h3 class="section-title">مكونات شرقية</h3>
+    <div class="ingredients-showcase">
+      <div class="ingredient-item">
+        <i class="fas fa-seedling"></i>
+        <h4>دقيق عضوي</h4>
+        <p>T45، T55، حنطة، ودقيق شعير من الأطلس المتوسط.</p>
+      </div>
+      <div class="ingredient-item">
+        <i class="fas fa-wine-bottle"></i>
+        <h4>خلاصات وأزهار</h4>
+        <p>ماء زهر، ورد قلعة، لوز مر.</p>
+      </div>
+      <div class="ingredient-item">
+        <i class="fas fa-cube"></i>
+        <h4>شوكولاتة وبهارات</h4>
+        <p>كريولو، قرفة سيلان، خروب، بابريكا حلوة.</p>
+      </div>
+      <div class="ingredient-item">
+        <i class="fas fa-droplet"></i>
+        <h4>ملونات طبيعية</h4>
+        <p>مسحوق ورد، زعفران، كركم، حناء غذائية.</p>
+      </div>
+    </div>
+
+    <div class="product-grid" style="margin-top: 0.5rem;">
+      <div class="product-card">
+        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=1470&auto=format&fit=crop');">
+          <span class="badge">🍯 من سوس</span>
+        </div>
+        <div class="product-info">
+          <h4>عسل الفربيون</h4>
+          <p class="product-desc">وعاء 300غ، عسل نادر بنكهات حارة – لقرن الغزال.</p>
+          <div class="product-footer">
+            <span class="price">125 درهم</span>
+            <span class="btn-add"><i class="fas fa-plus"></i> أضف</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1605270012917-bf157c5ab954?q=80&w=1470&auto=format&fit=crop');">
+          <span class="badge">🥄 مسحوق ناعم</span>
+        </div>
+        <div class="product-info">
+          <h4>لوز مراكش</h4>
+          <p class="product-desc">لوز عضوي غير مقشر، تحميص خفيف، 1كغ.</p>
+          <div class="product-footer">
+            <span class="price">160 درهم</span>
+            <span class="btn-add"><i class="fas fa-plus"></i> أضف</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1589810264345-0c27a18faeec?q=80&w=1470&auto=format&fit=crop');">
+          <span class="badge">🌹 زهر</span>
+        </div>
+        <div class="product-info">
+          <h4>ماء ورد وزهر</h4>
+          <p class="product-desc">تقطير مزدوج حرفي – طقم قنينتين 250مل.</p>
+          <div class="product-footer">
+            <span class="price">98 درهم</span>
+            <span class="btn-add"><i class="fas fa-plus"></i> أضف</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="newsletter">
+    <h3>استلم حلوياتنا وأخبارنا</h3>
+    <p style="margin-bottom: 1.5rem;">وصفات مغربية، نصائح وعروض وردية.</p>
+    <div class="input-group">
+      <input type="email" placeholder="بريدك الإلكتروني" value="hello@cakistella.ma" readonly>
+      <button><i class="fas fa-paper-plane"></i> اشترك</button>
+    </div>
+    <p style="font-size: 0.9rem; opacity:0.9;">(موقع تعريفي – كاكيستيلا المغرب)</p>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <div class="logo-text" style="color: #fcc7db;">كاكيستيلا<span style="color:#f698b5;"> الدار البيضاء</span></div>
+        <p style="margin: 1rem 0 0.5rem;"><i class="fas fa-map-pin"></i> 45 شارع علال بن عبدالله، الدار البيضاء</p>
+        <p><i class="fas fa-phone-alt"></i> +212 522 63 87 45</p>
+        <p><i class="fas fa-envelope"></i> hello@cakistella.ma</p>
+      </div>
+      <div class="footer-col">
+        <h4>عن</h4>
+        <p>قصتنا</p>
+        <p>الالتزام بالجودة</p>
+        <p>مدونة ووصفات</p>
+      </div>
+      <div class="footer-col">
+        <h4>خدمة العملاء</h4>
+        <p>التوصيل والإرجاع</p>
+        <p>أسئلة شائعة</p>
+        <p>الشروط</p>
+      </div>
+      <div class="footer-col">
+        <h4>تابعنا</h4>
+        <p><i class="fab fa-instagram"></i> @cakistellama</p>
+        <p><i class="fab fa-pinterest"></i> Pinterest</p>
+        <p><i class="fab fa-facebook"></i> كاكيستيلا المغرب</p>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      © كاكيستيلا المغرب – صنع بحب <i class="fas fa-heart"></i> وبتلات الورد.  🇲🇦
+    </div>
+  </footer>
+</body>
+        </html>
